@@ -1,0 +1,112 @@
+/*
+0-600px:phone
+600-900px:Tablet portrait
+900-1200px:Tablet Landscape
+[1200-1800] is where our normal styles apply
+1800px +:Big desktop
+*/
+/*
+$breakpoint arguement choices
+-phone
+-tab-part
+-tab-land
+-big-desktop
+1em=16px
+
+*/
+@media (max-width: 33.75em) {
+    html {
+        font-size: 81.25%; } }
+
+@media (max-width: 75em) {
+    html {
+        font-size: 94.75%; } }
+
+@media (max-width: 60em) {
+    html {
+        font-size: 87.5%; } }
+
+@media (min-width: 112.5em) {
+    html {
+        font-size: 87.5%; } }
+
+.nav-user-text {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #1B9AAA;
+    color: white;
+    text-align: center;
+    line-height: 2.5rem; }
+
+.nav-user-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #F5F3F5;
+    margin: 0 auto;
+    display: block; }
+
+.mynav-bar {
+    padding: 0 1rem;
+    background: #0CAADC; }
+
+.mynav-dropdown {
+    border-radius: 0;
+    width: 300px;
+    background: #fefefe;
+    padding: 0; }
+
+.mynav-user-edit {
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer; }
+.mynav-user-edit:link, .mynav-user-edit:active {
+    border: 2px solid red;
+    border-radius: 3px;
+    padding: 3px 5px;
+    color: #333; }
+.mynav-user-edit:hover, .mynav-user-edit:visited {
+    text-decoration: none;
+    border-color: #F5F3F5;
+    color: #333; }
+
+.mynav-user-name {
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    font-family: raleway;
+    margin-bottom: 5px;
+    color: #333; }
+
+.mynav-user-email {
+    color: #0CAADC;
+    font-family: raleway;
+    margin-bottom: 0; }
+
+.mynav-user-gender {
+    color: #0CAADC;
+    font-family: raleway;
+    margin-bottom: 1.5rem !important;
+    font-size: .9rem; }
+
+.mynav-user-detail p {
+    color: #ccc; }
+
+.taskwrapper {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-auto-columns: 50%;
+    grid-auto-flow: column;
+    height: 100vh;
+    /* grid-auto-rows:100px; */
+    grid-auto-rows: minmax(100px, auto); }
+
+.grid-arrange {
+    grid-template-columns: 2fr 3fr 2fr; }
+
+#detailbar {
+    display: none; }
+
+.sidebar {
+    background: #fafafa; }
